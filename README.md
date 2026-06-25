@@ -1,6 +1,9 @@
 # Digital Governance and Audit of Spatial Information Systems  
 ### A Python Framework for Copernicus Program Performance Monitoring via OData APIs
 
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Library-Pandas-orange.svg)](https://pandas.pydata.org/)
+[![API](https://img.shields.io/badge/Protocol-OData%20%2F%20REST-green.svg)](https://www.odata.org/)
 
 ## 📌 Project Overview
 
@@ -10,7 +13,7 @@ The project addresses a key challenge in European digital governance:
 the continuous auditing and validation of Earth Observation data flows.
 
 A Python-based automated framework was developed to monitor Copernicus data services (CREODIAS infrastructure), with a focus on Sentinel-2 satellite products.
-
+The framework transforms raw satellite metadata into structured governance metrics for operational monitoring and audit purposes.
 
 ## 🧠 Core Objectives
 
@@ -39,7 +42,7 @@ A Python-based automated framework was developed to monitor Copernicus data serv
 - **Spatial Validation**  
   Geolocation footprint analysis
 - **Data Lifecycle Monitoring**  
-  Online vs archived data tracking (Eviction policies)
+  Tracking of online vs archived datasets based on lifecycle and eviction policies
 
 
 ## 🏗️ Framework Architecture
@@ -56,14 +59,21 @@ The system is structured around three analytical dimensions:
 - `README.md` → project documentation
 
 
-## 📊 Key Insight
+## 📊 Key Impact
 
-This framework transforms raw Earth Observation system logs into actionable governance metrics.
-
-It enables continuous auditing of Copernicus data services, supporting SLA compliance and improving transparency in European spatial data infrastructures (INSPIRE framework).
+- Improved transparency in Earth Observation data flows
+- Enabled automated KPI tracking for Copernicus services
+- Supported monitoring of SLA compliance in EU space infrastructure
 
 
 ## 🚀 Author
 
 Master’s Degree in Data Analysis and Modeling  
 Focus: Data Governance, API Analytics, and Space Data Systems
+
+
+## ▶️ How to run
+
+```bash
+pip install -r requirements.txt
+python audit_creodias_master.py
