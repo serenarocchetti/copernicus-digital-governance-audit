@@ -1,9 +1,6 @@
 # Digital Governance and Audit of Spatial Information Systems
 ## A Python Framework for Copernicus Program Performance Monitoring via OData APIs
 
-[![Python](https://www.python.org/)
-[![Pandas](https://pandas.pydata.org/)
-[![API](https://www.odata.org/)
 
 ### 📌 Project Overview
 This repository contains the technical architecture and source code developed for the Master's Thesis project titled **"Digital Governance e Audit dei Sistemi Informativi Spaziali"** at UnitelmaSapienza University (Rome). 
@@ -27,10 +24,8 @@ The conceptual framework is built around three fundamental analytical dimensions
 3. **Temporal Performance:** Empirical latency analysis to guarantee operational resilience for environmental monitoring and emergency response systems.
 
 ### 💻 Repository Structure
-* `/scripts`: Python automated pipelines for OData API querying and metric computation.
-* `/data`: Sample extracted metadata schemas from the Sentinel-2 constellation.
-* `/notebooks`: Exploratory Data Analysis (EDA) on latency trends and system logging behavior.
-* `Master_Thesis_Abstract_Serena_Rocchetti.pdf`: Extended documentation of the methodological and architectural framework.
+* `audit_creodias_master.py` - The core Python script containing the automated pipeline for OData API querying, data manipulation with Pandas, and KPI/latency calculations.
+* `README.md` - Documentation and project overview.
 
 ### 📈 Key Takeaways
 This framework transforms complex infrastructure logs into transparent business and governance metrics. It enables a continuous auditing model that minimizes technological silos and verifies Service Level Agreements (SLAs) compliance according to European spatial directives (INSPIRE).
